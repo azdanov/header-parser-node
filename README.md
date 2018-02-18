@@ -8,8 +8,8 @@ Based on [Micro](https://github.com/zeit/micro) http microservice
 server and deployed on [Now](https://zeit.co/now).
 
 Uses a [custom function](https://github.com/azdanov/header-parser-node/blob/0266bbaad2b02394232e4d43656aca387ec89553/lib/index.js#L4), [useragent](https://github.com/3rd-Eden/useragent)
-and [navigator](https://github.com/coolaj86/node-navigator) to determine
-information from incoming connection. A 404 is sent if path url differs
+and [negotiator](https://github.com/jshttp/negotiator) to determine
+information from an incoming connection. A `404` is sent if url path differs
 from `/api/whoami`.
 
 ---
