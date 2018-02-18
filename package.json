@@ -21,11 +21,13 @@
     "prettier": "^1.10.2"
   },
   "dependencies": {
-    "micro": "^9.1.0"
+    "micro": "^9.1.0",
+    "negotiator": "^0.6.1",
+    "useragent": "^2.3.0"
   },
   "scripts": {
     "start": "micro",
-    "dev": "micro-dev",
+    "dev": "micro-dev ./index.js",
     "lint": "yarn eslint --color --fix *.js ",
     "test": "jest",
     "precommit": "lint-staged && yarn test"
