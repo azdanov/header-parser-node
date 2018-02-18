@@ -1,6 +1,6 @@
 {
   "name": "header-parser-node",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A header parser microservice made in node",
   "main": "index.js",
   "repository": "git@github.com:azdanov/header-parser-node.git",
