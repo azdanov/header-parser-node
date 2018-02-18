@@ -1,0 +1,39 @@
+{
+  "name": "header-parser-node",
+  "version": "0.0.1",
+  "description": "A header parser microservice made in node",
+  "main": "index.js",
+  "repository": "git@github.com:azdanov/header-parser-node.git",
+  "author": "Anton Zdanov <azdanov@protonmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "eslint": "^4.18.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jest": "^21.12.2",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "jest": "^22.3.0",
+    "lint-staged": "^6.1.1",
+    "micro-dev": "^2.2.0",
+    "prettier": "^1.10.2"
+  },
+  "dependencies": {
+    "micro": "^9.1.0"
+  },
+  "scripts": {
+    "start": "micro",
+    "dev": "micro-dev",
+    "lint": "yarn eslint --color --fix *.js ",
+    "test": "jest",
+    "precommit": "lint-staged && yarn test"
+  },
+  "lint-staged": {
+    "*.js": [
+      "yarn run lint",
+      "git add"
+    ]
+  }
+}
